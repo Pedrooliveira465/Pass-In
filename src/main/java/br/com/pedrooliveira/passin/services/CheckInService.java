@@ -2,6 +2,7 @@ package br.com.pedrooliveira.passin.services;
 
 import br.com.pedrooliveira.passin.domain.attendee.Attendee;
 import br.com.pedrooliveira.passin.domain.checkin.CheckIn;
+import br.com.pedrooliveira.passin.domain.checkin.exceptions.CheckInAlreadyExistsException;
 import br.com.pedrooliveira.passin.repositories.CheckInRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
