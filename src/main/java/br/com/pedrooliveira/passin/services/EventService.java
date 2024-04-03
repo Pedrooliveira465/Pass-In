@@ -2,6 +2,7 @@ package br.com.pedrooliveira.passin.services;
 
 import br.com.pedrooliveira.passin.domain.attendee.Attendee;
 import br.com.pedrooliveira.passin.domain.event.Event;
+import br.com.pedrooliveira.passin.domain.event.exceptions.EventNotFoundException;
 import br.com.pedrooliveira.passin.dto.event.EventIdDTO;
 import br.com.pedrooliveira.passin.dto.event.EventRequestDTO;
 import br.com.pedrooliveira.passin.dto.event.EventResponseDTO;
@@ -23,6 +24,7 @@ public class EventService {
         List<Attendee> attendeesList = this.attendeeService.getAllAttendeesFromEvent(eventId);
         return new EventResponseDTO(event, attendeesList.size());
     }
+
     public EventIdDTO createEvent(EventRequestDTO eventDTO){
         Event newEvent = new Event();
         newEvent.setTitle(eventDTO.title());
