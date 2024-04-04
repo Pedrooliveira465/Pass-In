@@ -4,6 +4,8 @@ import br.com.pedrooliveira.passin.domain.attendee.Attendee;
 import br.com.pedrooliveira.passin.domain.event.Event;
 import br.com.pedrooliveira.passin.domain.event.exceptions.EventFullException;
 import br.com.pedrooliveira.passin.domain.event.exceptions.EventNotFoundException;
+import br.com.pedrooliveira.passin.dto.attendee.AttendeeIdDTO;
+import br.com.pedrooliveira.passin.dto.attendee.AttendeeRequestDTO;
 import br.com.pedrooliveira.passin.dto.event.EventIdDTO;
 import br.com.pedrooliveira.passin.dto.event.EventRequestDTO;
 import br.com.pedrooliveira.passin.dto.event.EventResponseDTO;
