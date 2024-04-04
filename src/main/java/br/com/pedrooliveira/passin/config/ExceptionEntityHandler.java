@@ -5,6 +5,7 @@ import br.com.pedrooliveira.passin.domain.attendee.exceptions.AttendeeNotFoundEx
 import br.com.pedrooliveira.passin.domain.checkin.exceptions.CheckInAlreadyExistsException;
 import br.com.pedrooliveira.passin.domain.event.exceptions.EventFullException;
 import br.com.pedrooliveira.passin.domain.event.exceptions.EventNotFoundException;
+import br.com.pedrooliveira.passin.dto.general.ErrorResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
